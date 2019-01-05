@@ -1,0 +1,87 @@
+<template>
+  <div class="app">
+    <router-view/>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
+
+<style>
+
+input::-webkit-input-placeholder {
+  color: #bbb;
+}
+input::-moz-input-placeholder {
+  color: #bbb;
+}
+input::-ms-input-placeholder {
+  color: #bbb;
+}
+input[type=button],input[type=text],input[type=password]{
+  -webkit-appearance:none;
+  appearance:none;
+  outline:none
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd, input,figure { margin: 0;
+padding: 0; }
+a, a:hover { 
+  text-decoration: none;
+  outline: none;  
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+-webkit-user-select: none;
+-moz-user-focus: none;
+-moz-user-select: none;
+}
+li { list-style: none }
+img { border: none; max-width:100%; }
+input, select, textarea { border: none;  background: none }
+em,i { font-style: normal }
+h1, h2, h3, h4, h5, h6 { font-weight: normal }
+.jz{ max-width:990px; margin:0 auto;}
+.jz640{ max-width:640px; margin:0 auto;}
+.jz700{ max-width:700px; margin:0 auto;}
+.jz1200{ max-width:1200px; margin:0 auto;}
+.clearfix{*zoom:1;}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.clearfix::after{ clear: both; display: block; height: 0; content: ''; visibility: hidden;}
+.bg_1{
+    height:100%;
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+      z-index:-1;
+      background:#fff;
+}
+
+body {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin:0;
+    color: #595F66;
+    padding:0;
+    overflow-x: hidden;
+}
+.img{
+    border:0;
+}
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+</style>
